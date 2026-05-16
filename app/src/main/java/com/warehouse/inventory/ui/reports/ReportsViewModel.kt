@@ -24,7 +24,6 @@ import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
-import org.apache.poi.ss.usermodel.CellStyle
 import org.apache.poi.ss.usermodel.FillPatternType
 import org.apache.poi.ss.usermodel.HorizontalAlignment
 import org.apache.poi.ss.usermodel.IndexedColors
@@ -272,7 +271,7 @@ class ReportsViewModel @Inject constructor(
         })
     }
 
-    private fun XSSFWorkbook.createHeaderStyle(): CellStyle = createCellStyle().apply {
+    private fun XSSFWorkbook.createHeaderStyle() = createCellStyle().apply {
         fillForegroundColor = IndexedColors.DARK_BLUE.index
         fillPattern = FillPatternType.SOLID_FOREGROUND
         alignment = HorizontalAlignment.CENTER
