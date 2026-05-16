@@ -19,7 +19,7 @@ import com.warehouse.inventory.data.local.entities.StockMovementEntity
         StockMovementEntity::class
     ],
     version = 1,
-    exportSchema = true
+    exportSchema = false
 )
 abstract class AppDatabase : RoomDatabase() {
     abstract fun binDao(): BinDao

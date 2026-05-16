@@ -12,7 +12,7 @@ android {
 
     defaultConfig {
         applicationId = "com.warehouse.inventory"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 34
         versionCode = 1
         versionName = "1.0.0"
@@ -110,7 +110,9 @@ dependencies {
     implementation("androidx.datastore:datastore-preferences:1.1.1")
 
     // Apache POI for Excel import/export
-    implementation("org.apache.poi:poi:5.2.5")
+    implementation("org.apache.poi:poi:5.2.5") {
+        exclude(group = "org.apache.logging.log4j")
+    }
     implementation("org.apache.poi:poi-ooxml:5.2.5") {
         exclude(group = "org.apache.logging.log4j")
     }
