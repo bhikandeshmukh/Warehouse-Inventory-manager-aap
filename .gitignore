@@ -1,0 +1,45 @@
+# Android / Gradle
+*.iml
+.gradle/
+/local.properties
+/.idea/
+.DS_Store
+/build/
+/app/build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Generated files
+*.apk
+*.aab
+*.dex
+*.class
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Kotlin
+*.kotlin_module
+
+# IntelliJ / Android Studio
+.idea/
+*.iws
+*.ipr
+out/
+gen/
+
+# Sensitive files — keep Supabase keys out of commits for production
+# local.properties  (already ignored by default)
+
+# OS files
+Thumbs.db
+.DS_Store
+Desktop.ini
+
+# Python (analysis_core.py artifacts)
+__pycache__/
+*.pyc
+*.pyo
